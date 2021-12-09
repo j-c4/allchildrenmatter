@@ -21,9 +21,15 @@ public class Controlador {
     public String level1(){
        return "level1";
    }
+
     @GetMapping(path = "/level2")
     public String level2(){
         return "level2";
+    }
+
+    @GetMapping(path = "/level2.js")
+    public String level2JS() {
+       return "level2.js";
     }
 
     @GetMapping(path = "/level3")

@@ -1,2 +1,0 @@
-var beatings = $('#beatings')
-
