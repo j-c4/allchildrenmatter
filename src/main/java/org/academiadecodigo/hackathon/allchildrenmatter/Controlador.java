@@ -3,6 +3,7 @@ package org.academiadecodigo.hackathon.allchildrenmatter;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class Controlador {
@@ -56,6 +57,12 @@ public class Controlador {
     public String level5(){
         return "functionadd5";
     }
+
+    @GetMapping(path="/level2")
+    public String jslvl(){
+        return "level2";
+    }
+
 
 }
 

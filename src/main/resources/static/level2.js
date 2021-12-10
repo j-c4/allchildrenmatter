@@ -1,24 +1,41 @@
-var button1 = $('<button></button>').click(function () {
-    window.location="/"
+var form = $('#form')
+
+var beatings = document.getElementById('beatings')
+var beatings_button = document.getElementById('beatings_button')
+
+console.log("caralho")
+
+
+beatings_button.addEventListener('click', event => {
+    answer = parseInt(beatings.value)
+    localStorage.setItem("answer", answer);
+}, true)
+
+//Creation of buttons and respective functions
+var button1 = document.createElement('button')
+var button2 = document.createElement('button')
+var button3 = document.createElement('button')
+
+var answerDiv = document.getElementById('buttons')
+
+var text1 = document.createTextNode("Sandrita's beatings > Buddy's beatings")
+var text2 = document.createTextNode("Sandrita's beatings == Buddy's beatings")
+var text3 = document.createTextNode("Sandrita's beatings < Buddy's beatings")
+
+answerDiv.appendChild(button1)
+answerDiv.appendChild(button2)
+answerDiv.appendChild(button3)
+
+button1.appendChild(text1)
+button2.appendChild(text2)
+button3.appendChild(text3)
+
+button1.addEventListener('click', event => {
+    if (parseInt(localStorage.getItem("answer")) === 2) {
+        window.location = "/"
+    } else {
+        window.location = "/wrong"
+    }
 })
 
-var answer = document.getElementById("beatings").value
 
-console.log(answer)
-
-var button2 = $('<button></button>')
-var button3 = $('<button></button>')
-
-var answerDiv = $('#div_answer')
-
-var text1 = "Sandrita's beatings > Buddy's beatings"
-var text2 = "Sandrita's beatings == Buddy's beatings"
-var text3 = "Sandrita's beatings < Buddy's beatings"
-
-answerDiv.append(button1)
-answerDiv.append(button2)
-answerDiv.append(button3)
-
-button1.append(text1)
-button2.append(text2)
-button3.append(text3)
