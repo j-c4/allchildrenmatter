@@ -14,7 +14,7 @@ public class Controlador {
     }
 
     @GetMapping(path = "/mainViewStyle.css")
-    public String css(){
+    public String mainCss(){
         return "mainViewStyle.css";
     }
 
@@ -58,9 +58,36 @@ public class Controlador {
         return "functionadd5";
     }
 
+<<<<<<< HEAD
     @GetMapping(path="/level2")
     public String jslvl(){
         return "level2";
+=======
+    @GetMapping(path = "/loop")
+    public String level6(){
+        return "loop6";
+    }
+
+    @GetMapping(path = "/outsystems")
+    public String outsystems(){
+        return "outsystems";
+    }
+
+    @GetMapping(path = "/final")
+    public String goodbye(){
+        return "final";
+    }
+
+    @GetMapping(path = "/main.css")
+    public String arrayCss(){
+        return "main.css";
+    }
+
+
+    @GetMapping(path = "/background.png")
+    public String background(){
+        return "background.png";
+>>>>>>> 89dc30deaa8388fbfa1698e149bb2f7ee601704c
     }
 
 
