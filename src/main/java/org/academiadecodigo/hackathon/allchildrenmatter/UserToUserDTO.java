@@ -13,7 +13,6 @@ public class UserToUserDTO implements Converter<User, UserDTO> {
         UserDTO userDTO = new UserDTO();
         userDTO.setUsername(user.getUsername());
         userDTO.setPassword(user.getPassword());
-        userDTO.setScore(user.getScore());
 
         return userDTO;
     }

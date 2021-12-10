@@ -12,7 +12,6 @@ public class User {
     private String username;
     private String password;
     private String lastPage;
-    private int score;
 
     public String getUsername() {
         return username;
@@ -36,14 +35,6 @@ public class User {
 
     public void setLastPage(String lastPage) {
         this.lastPage = lastPage;
-    }
-
-    public int getScore() {
-        return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
     }
 
 }

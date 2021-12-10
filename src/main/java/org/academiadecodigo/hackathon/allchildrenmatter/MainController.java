@@ -55,6 +55,7 @@ public class MainController {
 
     @GetMapping(path = "/wrong")
     public String wrong() {
+        setLastPage("redirect:/string");
         return "wrong";
     }
 
@@ -65,16 +66,19 @@ public class MainController {
 
     @GetMapping(path = "/boolean")
     public String level2() {
+        setLastPage("redirect:/boolean");
         return "boolean2";
     }
 
     @GetMapping(path = "/languagejs")
     public String level3() {
+        setLastPage("redirect:/languagejs");
         return "languagejs3";
     }
 
     @GetMapping(path = "/operator")
     public String level4() {
+        setLastPage("redirect:/operator");
         return "operator4";
     }
 
@@ -85,26 +89,31 @@ public class MainController {
 
     @GetMapping(path = "/array")
     public String level5() {
+        setLastPage("redirect:/array");
         return "array5";
     }
 
     @GetMapping(path = "/functionadd")
     public String level6() {
+        setLastPage("redirect:/functionadd");
         return "functionadd6";
     }
 
     @GetMapping(path = "/loop")
     public String level7() {
+        setLastPage("redirect:/loop");
         return "loop7";
     }
 
     @GetMapping(path = "/outsystems")
     public String outsystems() {
+        setLastPage("redirect:/outsystems");
         return "outsystems";
     }
 
     @GetMapping(path = "/final")
     public String goodbye() {
+        setLastPage("redirect:/final");
         return "final";
     }
 
@@ -115,7 +124,13 @@ public class MainController {
 
     @GetMapping(path="/concepts")
     public String concept(){
+        setLastPage("redirect:/string");
         return "concepts";
+    }
+
+    private void setLastPage(String path) {
+        loggedUser.setLastPage(path);
+        userService.save(loggedUser);
     }
 
 }

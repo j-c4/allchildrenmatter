@@ -26,7 +26,6 @@ public class UserDTOToUser implements Converter<UserDTO,User> {
         user.setUsername(userDTO.getUsername());
         user.setPassword(userDTO.getPassword());
         user.setLastPage("redirect:/string");
-        user.setScore(0);
 
         return user;
     }

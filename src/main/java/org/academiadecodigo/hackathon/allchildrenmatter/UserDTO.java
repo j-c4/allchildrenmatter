@@ -13,8 +13,6 @@ public class UserDTO {
     @Size(min=2, max=10)
     private String password;
 
-    private int score;
-
     public String getPassword() {
         return password;
     }
@@ -31,13 +29,6 @@ public class UserDTO {
         this.username = username;
     }
 
-    public int getScore() {
-        return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
 }
 
 
