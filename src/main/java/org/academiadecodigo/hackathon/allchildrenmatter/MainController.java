@@ -1,11 +1,10 @@
 package org.academiadecodigo.hackathon.allchildrenmatter;
 
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@Controller
-public class Controlador {
+@MainController
+public class MainController {
 
     @GetMapping
     public String test() {
@@ -75,6 +74,11 @@ public class Controlador {
     @GetMapping(path = "/main.css")
     public String arrayCss() {
         return "main.css";
+    }
+
+    @GetMapping(path="/concepts")
+    public String concept(){
+        return "concepts";
     }
 }
 

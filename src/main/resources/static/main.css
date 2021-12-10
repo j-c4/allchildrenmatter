@@ -70,3 +70,18 @@ a {
 #spermText{
     font-size: 100px;
 }
+
+p {
+    font-family: 'Monaco', cursive;
+    max-width: 80vh;
+
+
+}
+
+#concepts {
+    font-family: 'Monaco', cursive;
+}
+
+#conceptBottom {
+    margin-bottom: 10vh;
+}
