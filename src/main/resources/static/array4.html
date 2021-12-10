@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css" modelType="text/css"/>
     <title>Level4</title>
 </head>
 <body>
-<div>
+<div id="text">
     Sandrita had a collection of favorite specially shaped stones that she used to pick in the orphanage playground.
-    Her "buddies" used to steal some of her stones ! In one of her nights going thru JavaScript tutorials given by a
+    Her "buddies" used to steal some of her stones! In one of her nights going thru JavaScript tutorials given by some
     random Indian guy on Youtube, Sandrita came across Arrays and she thought "Oh, what a beautiful way to keep track
     of my stones!"
     <br>
@@ -16,10 +17,17 @@
 
 <br>
 
-<button><a href ="/wrong"> var stones = {"Circular Stone", "Heart Shaped Stone", "Square Stone", "Pointy Stone"};</a> </button>
-<button><a href ="/functionadd"> var stones = ["Circular Stone", "Heart Shaped Stone", "Square Stone", "Pointy Stone" ]; </a> </button>
-<button><a href ="/wrong"> var stones = "Circular Stone", "Heart Shaped Stone", "Square Stone", "Pointy Stone"; </a> </button>
-<button><a href ="/wrong"> var stones = ("Circular Stone", "Heart Shaped Stone", "Square Stone", "Pointy Stone"); </a> </button>
+<div id="buttons">
+    <div>
+<a href ="/wrong"><button> var stones = {"Circular Stone", "Heart Shaped Stone", "Square Stone", "Pointy Stone"};</button></a>
+
+<a href ="/functionadd"><button> var stones = ["Circular Stone", "Heart Shaped Stone", "Square Stone", "Pointy Stone" ]; </button></a>
+    </div>
+    <div>
+<a href ="/wrong"><button> var stones = "Circular Stone", "Heart Shaped Stone", "Square Stone", "Pointy Stone"; </button></a>
+<a href ="/wrong"><button> var stones = ("Circular Stone", "Heart Shaped Stone", "Square Stone", "Pointy Stone"); </button></a>
+    </div>
+</div>
 
 </body>
 </html>
