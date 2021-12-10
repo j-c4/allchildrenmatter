@@ -31,7 +31,6 @@ button {
 #buttons {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
 }
 
 #beatings_button {
@@ -51,8 +50,6 @@ input {
     width: 100px;
 
     font-size:50px;
-=======
->>>>>>> main
 }
 
 a {
