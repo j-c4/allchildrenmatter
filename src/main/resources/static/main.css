@@ -29,7 +29,6 @@ button {
 #buttons {
     display: flex;
     flex-direction: column;
-
 }
 
 a {
