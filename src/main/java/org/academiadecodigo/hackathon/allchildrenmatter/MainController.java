@@ -33,7 +33,6 @@ public class MainController {
 
     @GetMapping(path = {"", "/"})
     public String main() {
-        System.out.println("yello");
         return "mainView";
     }
 
@@ -49,39 +48,9 @@ public class MainController {
         return loggedUser.getLastPage();
     }
 
-    @GetMapping(path = "/string")
-    public String string() {
-        return "string";
-    }
-
-    @GetMapping(path = "/boolean")
-    public String level1(){
-       return "boolean";
-    }
-
-    @GetMapping(path = "/operators")
-    public String level2(){
-        return "operators";
-    }
-
-    @GetMapping(path = "/languagejs")
-    public String level3(){
-        return "languagejs";
-    }
-
-    @GetMapping(path = "/array")
-    public String level4(){
-        return "array";
-    }
-
-    @GetMapping(path = "/functionadd")
-    public String level5(){
-        return "functionadd";
-    }
-
-    @GetMapping(path = "/loop")
-    public String level6(){
-        return "loop";
+    @GetMapping(path = "/mainViewStyle.css")
+    public String mainCss() {
+        return "mainViewStyle.css";
     }
 
     @GetMapping(path = "/wrong")
@@ -89,14 +58,64 @@ public class MainController {
         return "wrong";
     }
 
-    @GetMapping(path = "/mainViewStyle.css")
-    public String mainViewCss(){
-        return "mainViewStyle.css";
+    @GetMapping(path = "/string")
+    public String level1() {
+        return "string1";
     }
 
-    @GetMapping(path = "/stringViewStyle.css")
-    public String stringViewCss(){
-        return "stringViewStyle.css";
+    @GetMapping(path = "/boolean")
+    public String level2() {
+        return "boolean2";
+    }
+
+    @GetMapping(path = "/languagejs")
+    public String level3() {
+        return "languagejs3";
+    }
+
+    @GetMapping(path = "/operator")
+    public String level4() {
+        return "operator4";
+    }
+
+    @GetMapping(path = "/operator4.js")
+    public String level4js() {
+        return "operator4.js";
+    }
+
+    @GetMapping(path = "/array")
+    public String level5() {
+        return "array5";
+    }
+
+    @GetMapping(path = "/functionadd")
+    public String level6() {
+        return "functionadd6";
+    }
+
+    @GetMapping(path = "/loop")
+    public String level7() {
+        return "loop7";
+    }
+
+    @GetMapping(path = "/outsystems")
+    public String outsystems() {
+        return "outsystems";
+    }
+
+    @GetMapping(path = "/final")
+    public String goodbye() {
+        return "final";
+    }
+
+    @GetMapping(path = "/main.css")
+    public String arrayCss() {
+        return "main.css";
+    }
+
+    @GetMapping(path="/concepts")
+    public String concept(){
+        return "concepts";
     }
 
 }
