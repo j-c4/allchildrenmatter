@@ -26,6 +26,7 @@ public class Controlador {
     public String level1(){
        return "boolean";
    }
+
     @GetMapping(path = "/operators")
     public String level2(){
         return "operators";
@@ -37,8 +38,13 @@ public class Controlador {
     }
 
     @GetMapping(path = "/mainViewStyle.css")
-    public String css(){
+    public String mainViewCss(){
         return "mainViewStyle.css";
+    }
+
+    @GetMapping(path = "/stringViewStyle.css")
+    public String stringViewCss(){
+        return "stringViewStyle.css";
     }
 
     @GetMapping(path = "/array")
@@ -51,9 +57,9 @@ public class Controlador {
         return "functionadd";
     }
 
-    @GetMapping(path = "/level6")
+    @GetMapping(path = "/loop")
     public String level6(){
-        return "level6";
+        return "loop";
     }
 
 }
