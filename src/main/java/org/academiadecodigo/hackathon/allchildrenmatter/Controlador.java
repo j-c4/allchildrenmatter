@@ -3,7 +3,6 @@ package org.academiadecodigo.hackathon.allchildrenmatter;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class Controlador {
@@ -14,13 +13,8 @@ public class Controlador {
     }
 
     @GetMapping(path = "/mainViewStyle.css")
-    public String mainCss(){
+    public String mainCss() {
         return "mainViewStyle.css";
-    }
-
-    @GetMapping(path = "/string")
-    public String showIntro() {
-        return "string1";
     }
 
     @GetMapping(path = "/wrong")
@@ -28,68 +22,59 @@ public class Controlador {
         return "wrong";
     }
 
-   @GetMapping(path = "/boolean")
-    public String level1(){
-       return "boolean2";
-   }
-
-    @GetMapping(path = "/operators")
-    public String level2(){
-        return "operators";
+    @GetMapping(path = "/string")
+    public String level1() {
+        return "string1";
     }
 
-    @GetMapping(path = "/level2.js")
-    public String level2JS() {
-       return "level2.js";
+    @GetMapping(path = "/boolean")
+    public String level2() {
+        return "boolean2";
     }
 
     @GetMapping(path = "/languagejs")
-    public String level3(){
+    public String level3() {
         return "languagejs3";
     }
 
+    @GetMapping(path = "/operator")
+    public String level4() {
+        return "operator4";
+    }
+
+    @GetMapping(path = "/operator4.js")
+    public String level4js() {
+        return "operator4.js";
+    }
+
     @GetMapping(path = "/array")
-    public String level4(){
-        return "array4";
+    public String level5() {
+        return "array5";
     }
 
     @GetMapping(path = "/functionadd")
-    public String level5(){
-        return "functionadd5";
+    public String level6() {
+        return "functionadd6";
     }
 
-<<<<<<< HEAD
-    @GetMapping(path="/level2")
-    public String jslvl(){
-        return "level2";
-=======
     @GetMapping(path = "/loop")
-    public String level6(){
-        return "loop6";
+    public String level7() {
+        return "loop7";
     }
 
     @GetMapping(path = "/outsystems")
-    public String outsystems(){
+    public String outsystems() {
         return "outsystems";
     }
 
     @GetMapping(path = "/final")
-    public String goodbye(){
+    public String goodbye() {
         return "final";
     }
 
     @GetMapping(path = "/main.css")
-    public String arrayCss(){
+    public String arrayCss() {
         return "main.css";
     }
-
-
-    @GetMapping(path = "/background.png")
-    public String background(){
-        return "background.png";
->>>>>>> 89dc30deaa8388fbfa1698e149bb2f7ee601704c
-    }
-
-
 }
 

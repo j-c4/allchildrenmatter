@@ -1,10 +1,5 @@
-var form = $('#form')
-
 var beatings = document.getElementById('beatings')
 var beatings_button = document.getElementById('beatings_button')
-
-console.log("caralho")
-
 
 beatings_button.addEventListener('click', event => {
     answer = parseInt(beatings.value)
@@ -31,11 +26,29 @@ button2.appendChild(text2)
 button3.appendChild(text3)
 
 button1.addEventListener('click', event => {
-    if (parseInt(localStorage.getItem("answer")) === 2) {
-        window.location = "/"
+    if (parseInt(localStorage.getItem("answer")) > 5) {
+        window.location = "/array"
     } else {
         window.location = "/wrong"
     }
 })
+
+button2.addEventListener('click', event => {
+    if (parseInt(localStorage.getItem("answer")) === 5) {
+        window.location = "/array"
+    } else {
+        window.location = "/wrong"
+    }
+})
+
+button3.addEventListener('click', event => {
+    if (parseInt(localStorage.getItem("answer")) < 5) {
+        window.location = "/array"
+    } else {
+        window.location = "/wrong"
+    }
+})
+
+
 
 
