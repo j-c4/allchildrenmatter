@@ -13,7 +13,7 @@ A web page game to teach children about programming.
 ## How it works
 
 You are presented with simple programming questions, one at a time. If you get it right you go on to the next one, otherwise you have to try again from the beginning (children also need to learn about frustration).
-In case you need to leave the game halfway through you can always go back to the question you were by inserting the username and password you used.
+In case you need to leave the game halfway through, you can always go back to the question you were by inserting the username and password you used.
 
 ## Development
 
